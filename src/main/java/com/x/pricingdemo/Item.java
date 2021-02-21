@@ -26,5 +26,14 @@ public class Item {
     private String itemName;
     private Integer numOfItemInCarton;
     private Double cartonPrice;
+
+    public Item(){}
+
+    public Item(Long id, String itemName, Integer numOfItemInCarton, Double cartonPrice) {
+        this.id = id;
+        this.itemName = itemName;
+        this.numOfItemInCarton = numOfItemInCarton;
+        this.cartonPrice = cartonPrice;
+    }
 }
 

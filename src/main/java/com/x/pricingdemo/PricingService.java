@@ -14,6 +14,8 @@ import java.util.List;
 public interface PricingService {
 
     Double calculateTotalPrice(List<PricingRequest> list) throws Exception;
+
+    List<Item> getAllItems();
 }
 
 

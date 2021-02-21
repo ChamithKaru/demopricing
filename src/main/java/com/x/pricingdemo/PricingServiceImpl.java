@@ -1,5 +1,6 @@
 package com.x.pricingdemo;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import java.util.List;
  **/
 
 @Service
+@Slf4j
 public class PricingServiceImpl implements PricingService{
 
     @Autowired
@@ -44,6 +46,11 @@ public class PricingServiceImpl implements PricingService{
         }
 
         return totalPrice;
+    }
+
+    @Override
+    public List<Item> getAllItems() {
+       return itemRepository.findAll();
     }
 }
 
