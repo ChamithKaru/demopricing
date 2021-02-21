@@ -1,6 +1,9 @@
 # Demo Pricing
 Demo project for pricing module in spring boot 2.5.0
 
+Github public repo :
+https://github.com/ChamithKaru/demopricing
+
 ###System requirements
 Java version 11.0.9
 Gradle version  6.7.1
